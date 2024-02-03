@@ -13,6 +13,8 @@ const Home = () => {
                     <div className="contant">
                         <h3>Winter Kurti</h3>
                         <h2>Kurti</h2>
+                        <h2>Kurti</h2>
+
                         <p>50% off for membership.</p>
                         <Link to='/shop' className="link">Let's Do Shopping</Link>
                     </div>
