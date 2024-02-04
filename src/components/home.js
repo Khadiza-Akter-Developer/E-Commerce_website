@@ -3,7 +3,7 @@ import './home.css'
 import { Link } from 'react-router-dom';
 import Homeproduct from "./product";
 import { TbSlideshow } from "react-icons/tb";
-
+import { ImHeart } from "react-icons/im";
 const Home = () => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
     return (
@@ -31,27 +31,30 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="product">
-                            <div className="container">
-                                {
-                                    trendingProduct.map((curELm) => {
-                                        return (
-                                            <>
-                                                <div className="box">
-                                                    <div className="img_box">
-                                                        <img src={curELm.image} alt=""></img>
-                                                        <div className="icon">
-                                                            <div className="icon-box">
-                                                            <TbSlideshow />
+                                <div className="container">
+                                    {
+                                        trendingProduct.map((curELm) => {
+                                            return (
+                                                <>
+                                                    <div className="box">
+                                                        <div className="img_box">
+                                                            <img src={curELm.image} alt=""></img>
+                                                            <div className="icon">
+                                                                <div className="icon-box">
+                                                                    <TbSlideshow />
+                                                                </div>
+                                                                <div className="icon-box">
+                                                                    <ImHeart />                                                            
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                                 </>
-                                        )
-                                    })
+                                            )
+                                        })
 
-                                }
-                            </div>
+                                    }
+                                </div>
                             </div>
                         </div>
                         <div className="right_box">
