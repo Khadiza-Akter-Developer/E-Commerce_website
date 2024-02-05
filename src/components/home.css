@@ -77,12 +77,12 @@
 .home .trending .container .left-box
 {
     padding: 10px 20px;
-    width: 75%;
+    width: 100%;
 }
 .home .trending .container .left-box .header
 {
     display: flex;
-    max-width: 90%;
+    max-width: 100%;
     padding: 12px 10px;
     background: #eae8e8;
     justify-content: space-between;
@@ -119,7 +119,7 @@
 }
 .home .trending .container .left-box .product .container
 {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -206,6 +206,21 @@
     cursor: pointer;
     font-weight: bold;
 }
+.home .trending .container .left-box .product .show-btn
+{
+    margin-top: 20px;
+    margin-left: 50%;
+    padding: 10px 10px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 50;
+    cursor: pointer;
+}
+.home .trending .container .left-box .product .show-btn:hover
+{
+    color: #021ea7;
+}
+
 
 
 
