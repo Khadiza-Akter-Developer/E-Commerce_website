@@ -51,8 +51,9 @@ const Home = () => {
                                                         <div className="info">
                                                             <h3>{curELm.Name}</h3>
                                                             <p>{curELm.price}</p>
-                                                            <button> Add to Cart </button>
                                                             {/* <Link to='/cart'> Add to Cart </Link> */}
+                                                            <button> Add to Cart </button>
+                                                            
                                                         </div>
                                                     </div>
                                                 </>
