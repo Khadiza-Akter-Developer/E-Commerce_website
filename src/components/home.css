@@ -82,9 +82,9 @@
 .home .trending .container .left-box .header
 {
     display: flex;
-    max-width: 100%;
-    padding: 10px 10px;
-    background: #ffffff;
+    max-width: 90%;
+    padding: 12px 10px;
+    background: #eae8e8;
     justify-content: space-between;
 }
 .home .trending .container .left-box .header .heading h2
@@ -93,22 +93,24 @@
     font-size: 16px;
     color: black;
     margin-top: 5px;
+    cursor: pointer;
 }
 .home .trending .container .left-box .header .category
 {
     display: flex;
-    margin-top: 5px;
+    margin-top: 5px ;
 }
 .home .trending .container .left-box .header .category h3
 {
     text-transform: capitalize;
-    margin-right: 10px;
+    margin-right: 4px;
     color: black;
     font-size: 14px;
     transition: 0.5s;
     cursor: pointer;
 }
-.home .trending .container .left-box .header .category h3:hover{
+.home .trending .container .left-box .header .category h3:hover
+{
     color: #3c26e1; 
 }
 .home .trending .container .left-box .product
@@ -192,14 +194,14 @@
     padding: 3px;
 
 }
-.home .trending .container .left-box .product .container .box .info button
+.home .trending .container .left-box .product .container .box .info .btn
 {
    padding: 3px;
    border-radius: 60;
    font-size: 15px;
    font-family: serif;
 }
-.home .trending .container .left-box .product .container .box .info button:hover
+.home .trending .container .left-box .product .container .box .info .btn:hover
 {
     cursor: pointer;
     font-weight: bold;

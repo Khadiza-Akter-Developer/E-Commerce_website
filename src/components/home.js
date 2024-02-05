@@ -6,6 +6,19 @@ import { TbSlideshow } from "react-icons/tb";
 import { ImHeart } from "react-icons/im";
 const Home = () => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
+    //product filtering
+    const filtercate = (x) =>
+    {
+        const filterproduct = Homeproduct.filter((curELm) =>{
+            return curELm.type === x
+        })
+        setTrendingProduct((filterproduct))
+    }
+    //all product
+    const allProduct = () => 
+    {
+        setTrendingProduct(Homeproduct)
+    }
     return (
         <>
             <div className="home">
@@ -22,12 +35,14 @@ const Home = () => {
                         <div className="left-box">
                             <div className="header">
                                 <div className="heading">
-                                    <h2>trending product</h2>
+                                    <h2 onClick={()=>allProduct()}>trending product</h2>
                                 </div>
                                 <div className="category">
-                                    <h3>New</h3>
-                                    <h3>Featured</h3>
-                                    <h3>Top selling product</h3>
+                                    <h3 onClick={() => filtercate('new')}>New</h3>
+                                    <h3 onClick={() => filtercate('woman')}>Woman</h3>
+                                    <h3 onClick={() => filtercate('winter')}>Winter</h3>
+                                    <h3 onClick={() => filtercate('man')}>Man </h3>
+
                                 </div>
                             </div>
                             <div className="product">
@@ -52,7 +67,7 @@ const Home = () => {
                                                             <h3>{curELm.Name}</h3>
                                                             <p>{curELm.price}</p>
                                                             {/* <Link to='/cart'> Add to Cart </Link> */}
-                                                            <button> Add to Cart </button>
+                                                            <button className="btn"> Add to Cart </button>
                                                             
                                                         </div>
                                                     </div>
