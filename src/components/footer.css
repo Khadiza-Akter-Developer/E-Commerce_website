@@ -65,6 +65,11 @@
 {
     padding-left: 6px;
 }
+.footer .container .left-box .box .f_icon .iconss:hover
+{
+    color: blue;
+}
+
 
 
 
