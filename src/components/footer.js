@@ -30,7 +30,8 @@ const Footer = () => {
                             <FaTwitter />                            
                             </div>
                             <div className="iconss">
-                            <FaYoutube />                            </div>
+                            <FaYoutube />                            
+                            </div>
                         </div>
 
                     </div>
