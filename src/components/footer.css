@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+.footer
+{
+    width: 100%;
+    padding: 10px 30px;
+    background: rgb(209, 207, 207);
+}
+.footer .container
+{
+    display: flex;
+    width: 100%;
+}
+.footer .container .left-box
+{
+    width: 100%;
+    padding: 20px 20px;
+    border-right: 2px solid rgb(63, 59, 59);
+    border: none;
+}
+.footer .container .left-box .box
+{
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+.footer .container .left-box .box .icon_box
+{
+    font-size: 22px;
+}
+.footer .container .left-box .box .detail
+{
+    padding-left: 10px; 
+}
+.footer .container .left-box .box .detail h3
+{
+    font-size: large;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer .container .left-box .box .f_icon
+{
+    display: flex;
+    cursor: pointer;
+}
+/* .footer .container .left-box .box .f_icon:hover
+{
+    color: blue;
+    size: 10px;
+} */
+.footer .container .left-box .box .f_icon .icons
+{
+    padding-left: 1200px;
+}
+.footer .container .left-box .box .f_icon .icons:hover
+{
+    color: blue;
+}
+.footer .container .left-box .box .f_icon .iconss
+{
+    padding-left: 6px;
+}
+
+
+
+
+
+
