@@ -36,16 +36,6 @@ const Footer = () => {
 
                     </div>
                 </div>
-                {/* <div className="right_box">
-                        <div className="f_icon">
-                            <div className="icons">
-                            <IoLogoFacebook />
-                            </div>
-                            <div className="icons">
-                            <FaInstagram />                            
-                            </div>
-                        </div>
-                        </div> */}
             </div>
         </div>
         </>
