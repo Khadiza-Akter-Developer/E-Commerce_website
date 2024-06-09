@@ -7,16 +7,14 @@ import { ImHeart } from "react-icons/im";
 const Home = () => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
     //product filtering
-    const filtercate = (x) =>
-    {
-        const filterproduct = Homeproduct.filter((curELm) =>{
+    const filtercate = (x) => {
+        const filterproduct = Homeproduct.filter((curELm) => {
             return curELm.type === x
         })
         setTrendingProduct((filterproduct))
     }
     //all product
-    const allProduct = () => 
-    {
+    const allProduct = () => {
         setTrendingProduct(Homeproduct)
     }
     return (
@@ -35,7 +33,7 @@ const Home = () => {
                         <div className="left-box">
                             <div className="header">
                                 <div className="heading">
-                                    <h2 onClick={()=>allProduct()}>trending product</h2>
+                                    <h2 onClick={() => allProduct()}>trending product</h2>
                                 </div>
                                 <div className="category">
                                     <h3 onClick={() => filtercate('new')}>New</h3>
@@ -59,7 +57,7 @@ const Home = () => {
                                                                     <TbSlideshow />
                                                                 </div>
                                                                 <div className="icon-box">
-                                                                    <ImHeart />                                                            
+                                                                    <ImHeart />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -68,7 +66,7 @@ const Home = () => {
                                                             <p>{curELm.price}</p>
                                                             {/* <Link to='/cart'> Add to Cart </Link> */}
                                                             <button className="btn"> Add to Cart </button>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </>
@@ -91,9 +89,6 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-
-
-                                
                             </div> 
                         </div> */}
                         <div className="banners">
