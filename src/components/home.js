@@ -77,20 +77,7 @@ const Home = () => {
                                 <button className="show-btn">Show More</button>
                             </div>
                         </div>
-                        {/* <div className="right_box">
-                           <div className="container">
-                                <div className="testimonial">
-                                    <div className="head">
-                                        <h3>Our testimonial</h3>
-                                    </div>
-                                    <div className="detail">
-                                        <div className="img_box">
-                                            <img src="image/" alt="testimonial"></img>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div> */}
+                        
                         <div className="banners">
                             <div className="container">
                                 <div className="left_box">
