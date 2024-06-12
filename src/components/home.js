@@ -13,7 +13,6 @@ const Home = () => {
         })
         setTrendingProduct((filterproduct))
     }
-    //all product
     const allProduct = () => {
         setTrendingProduct(Homeproduct)
     }
