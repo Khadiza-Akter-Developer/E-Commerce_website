@@ -6,7 +6,7 @@ import { TbSlideshow } from "react-icons/tb";
 import { ImHeart } from "react-icons/im";
 const Home = () => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
-    //product filtering
+
     const filtercate = (x) => {
         const filterproduct = Homeproduct.filter((curELm) => {
             return curELm.type === x
